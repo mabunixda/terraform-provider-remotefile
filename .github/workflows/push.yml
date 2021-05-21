@@ -1,9 +1,10 @@
+---
+name: Semantic Release
 on:
   push:
     branches:
-      - master
+      - main
 
-name: Build and Publish
 jobs:
   all:
     name: Build and Publish
