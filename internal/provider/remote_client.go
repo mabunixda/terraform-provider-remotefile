@@ -108,8 +108,7 @@ func (c *RemoteClient) ReadFile(d *schema.ResourceData) error {
 	if err != nil {
 		return err
 	}
-
-	d.Set("content", string(content.String()))
+	d.Set("content", content.String())
 	return nil
 }
 

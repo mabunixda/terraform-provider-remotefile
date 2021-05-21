@@ -74,6 +74,11 @@ func dataSourceRemotefile() *schema.Resource {
 				ForceNew:    true,
 				Required:    true,
 			},
+			"content": {
+				Type:        schema.TypeString,
+				Computed:    true,
+				Description: "Content from remote file",
+			},
 		},
 	}
 }
